@@ -52,7 +52,7 @@ const Hero = () => {
             className="flex justify-center mb-6"
           >
             <img
-              src="/Images/memoji.png"
+              src={`${process.env.PUBLIC_URL}/Images/memoji.png`}
               alt="Firas Memoji"
               className="w-32 h-32 md:w-40 md:h-40"
             />

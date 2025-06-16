@@ -30,7 +30,7 @@ const Contact = () => {
           >
           <div className="h-20">
             <img
-                  src="/Images/memoji3.png"
+                  src={`${process.env.PUBLIC_URL}/Images/memoji3.png`}
                   alt="My Skills Memoji"
                   className="ml-3 w-15 h-15 md:w-20 md:h-20 object-contain pointer-events-none"
                 />

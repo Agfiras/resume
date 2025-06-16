@@ -75,7 +75,7 @@ const Navbar = () => {
               className="btn btn-primary"
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = '/Images/resume.pdf';
+                link.href = `${process.env.PUBLIC_URL}/Images/resume.pdf`;
                 link.download = 'Firas_Ajengui_Resume.pdf';
                 document.body.appendChild(link);
                 link.click();

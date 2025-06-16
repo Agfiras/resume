@@ -64,7 +64,8 @@ const About = () => {
             >
               <div className="absolute inset-0 bg-blue-600 rounded-full transform rotate-3"></div>
               <img
-                src="/Images/profile.png"
+
+                src={`${process.env.PUBLIC_URL}/Images/profile.png`}
                 alt="Firas Ajengui"
                 className="relative w-full h-full object-cover rounded-full border-4 border-white dark:border-gray-700 shadow-lg"
               />
@@ -94,7 +95,7 @@ const About = () => {
               <div className="flex items-center mb-6">
                 <h3 className="text-2xl font-semibold">My Skills</h3>
                 <img
-                  src="/Images/memoji2.png"
+                  src={`${process.env.PUBLIC_URL}/Images/memoji2.png`}
                   alt="My Skills Memoji"
                   className="ml-3 w-15 h-15 md:w-20 md:h-20 object-contain pointer-events-none"
                 />

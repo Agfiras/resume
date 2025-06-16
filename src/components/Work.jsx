@@ -7,19 +7,19 @@ const Work = () => {
   const [isHovering, setIsHovering] = useState(false);
 
   const project1Images = [
-    '/Images/Laposte Logo.png',
-    '/Images/Montage.png',
-    '/Images/MobileApp.png',
-    '/Images/Procces Map.png',
-    '/Images/Mailbox 3D.png'
+    'Images/Laposte Logo.png',
+    'Images/Procces Map.png',
+    'Images/Mailbox 3D.png',
+    'Images/Montage.png',
+    'Images/MobileApp.png'
   ];
 
   const project2Images = [
-    '/Images/AdokBatt.png',
+    'Images/AdokBatt.png',
   ];
 
   const project3Images = [
-    '/Images/Setup_icon.png',
+    'Images/Setup_icon.png',
   ];
 
   useEffect(() => {
