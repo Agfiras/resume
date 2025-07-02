@@ -46,7 +46,7 @@ const Work = () => {
     {
       title: 'Smart Mailbox Solution',
       description: 'A comprehensive smart mailbox system with real-time tracking and notifications.',
-      images: project1Images,
+      image: project1Images,
       imageDelay: 1000,
       technologies: ['Python', 'Raspberry Pi', 'React.js', 'Flutter', 'MQTT', 'Node-RED', 'MySQL'],
       github: 'https://github.com/Agfiras/Cross-platforme-MailBox-application',
@@ -156,16 +156,22 @@ const Work = () => {
                 {index === 0 ? (
                   <motion.img
                     key={currentImageIndex}
-                    src={project.images[currentImageIndex]}
+                    src={project.image[currentImageIndex]}
                     alt={`${project.title} - Image ${currentImageIndex + 1}`}
                     className="w-full h-48 object-contain bg-white"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5 }}
                   />
+                ) : index === 3 ? (
+                  <img
+                    src={project.images[0]}
+                    alt={project.title}
+                    className="w-full h-48 object-cover"
+                  />
                 ) : (
                   <img
-                    src={project.image}
+                    src={Array.isArray(project.image) ? project.image[0] : project.image}
                     alt={project.title}
                     className="w-full h-48 object-cover"
                   />
