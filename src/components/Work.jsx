@@ -6,6 +6,14 @@ const Work = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
 
+  const LLMImages =[
+    'Images/LLM1.png',
+    'Images/LLM2.png',
+  ];
+  const Vote = [
+    'Images/Vote.jpeg',
+  ];
+
   const project1Images = [
     'Images/Laposte Logo.png',
     'Images/Procces Map.png',
@@ -76,7 +84,41 @@ const Work = () => {
         'Clean uninstall routine for all services',
         'Reconfiguration of system shutdown behavior'
       ]
-    }
+    },
+    {
+      title: 'LLMrest',
+      description: 'mini “Pinterest‑for‑prompts” where people can save, search, and share their favorite LLM prompts.',
+      images: LLMImages,
+      imageDelay: 1000,
+      technologies: ['nodejs', 'css' ,'mongodb', 'reactjs' ,'vite'],
+      github: 'https://github.com/Agfiras/LLMprompts',
+      features: [
+        'User registration, login, and Google OAuth',
+        'Prompt creation, listing, and detail view',
+        'Tag-based filtering and search',
+        'Password reset via email (secure token)',
+        'Responsive, modern UI with dark mode',
+        'Secure, RESTful API with proper error handling',
+      ]
+},
+
+{
+      title: 'YourVotes',
+      description: 'A modern, decentralized voting application built with React, Ethers.js, and a Solidity smart contract. YourVotes allows users to create proposals and vote securely on the blockchain, with a beautiful, responsive UI.',
+      image: Vote,
+      technologies: ['React', 'Node.js', 'Ether.js','Solidity','Ethereum'],
+      github: 'https://github.com/Agfiras/Decentralized-Voting-System',
+      features: [
+        'Create new proposals (polls) via a modal form',
+        'View all open proposals in a clean card grid',
+        'Vote "Yes" or "No" on proposals directly from the UI',
+        'See live vote counts for each proposal',
+        'Connect wallet with MetaMask',
+        'Responsive, modern design',
+    ]
+
+}
+
   ];
 
   return (
